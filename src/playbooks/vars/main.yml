@@ -1,0 +1,11 @@
+mysql_root_password: devops_lab
+mysql_databases:
+  - name: notes
+    encoding: latin1
+    collation: latin1_general_ci
+mysql_users:
+  - name: notesapp
+    host: "%"
+    password: devops_lab
+    priv: "notes.*:ALL"
+    
