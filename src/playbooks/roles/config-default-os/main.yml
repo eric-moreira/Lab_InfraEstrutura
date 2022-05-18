@@ -1,9 +1,9 @@
-- name: Upgrade OS
-    yum:
-      name: '*'
-      state: latest
+- name: "Upgrade OS"
+  yum:
+    name: '*'
+    state: latest
 
-  - name: Install git client
-    yum:
+- name: "Install git client"
+  yum:
       name: git
-      state: lastest
+      state: latest
